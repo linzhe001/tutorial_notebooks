@@ -1,6 +1,6 @@
 # Deep Learning Basics notes
 This notes includes two parts: 
-1. basic train and test process 
+1. basic [train](https://github.com/linzhe001/tutorial_notebooks/edit/Notes/Deep_Learning_Basics.md#basic-train-process) and test process 
 2. model architecture
 ## Basic train process
 The following chart shows the general process:
@@ -20,3 +20,15 @@ There are two way to creat datasets class: [inherent from library](https://colab
 They are similar but only the new datasets create mapping between ID with classes (saved in .txt).
 
 ## Model architecture
+
+each convolution kernel (filters) can generate one channel output
+**Basic input output image size calculation**
+
+$$O = \frac{(I + 2P - K)}{S} + 1$$
+
+where：
+- $$O$$ = output image size（height or width）
+- $$I$$ = input image size
+- $$P$$ = padding
+- $$K$$ = kernel size
+- $$S$$ = stride

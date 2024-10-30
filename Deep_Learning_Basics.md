@@ -20,7 +20,7 @@ There are two way to creat datasets class: [inherent from library](https://colab
 They are similar but only the new datasets create mapping between ID with classes (saved in .txt).
 
 ## Model architecture
-
+### Basic knowledge
 ![image](./cnn_architecture.jpeg)
 
 shown in this figure:
@@ -38,3 +38,38 @@ where：
 - $$P$$ = padding
 - $$K$$ = kernel size
 - $$S$$ = stride
+### code structure
+like datasets function, model also can inherent from library or build by us.
+
+**general code architecture**
+```
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+
+######################################
+# define the model architecture part #
+######################################
+
+    def forward(self, x):
+
+##################################
+# define the forward propagation #
+##################################
+
+        return x
+```
+**Useful code to defin the mode architecture**
+```
+# each layer built like following example
+        self.conv1 = nn.Sequential(
+            nn.Conv2d(3, 64, 3, padding=1),
+            nn.BatchNorm2d(64),
+            nn.ReLU(),
+            nn.MaxPool2d(2)
+        )
+
+# these components could put in nn.Sequential
+- nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, stride=1, padding=1)
+- 
+```

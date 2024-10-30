@@ -15,4 +15,4 @@ Dataloader is used to split datasets into batches, so before dataloader there is
 > 
 > output of datasets: augumented and paired images and labels in trainset; paired images and labels in testset
 
-There are two way to creat datasets class: [inherent from library]([CIFAR_10N_CNN_withNotes.ipynb #CIFAR-10H_dataloader](https://colab.research.google.com/github/linzhe001/tutorial_notebooks/blob/Notes/CIFAR_10N_CNN_withNotes.ipynb#scrollTo=z4uiWMiyCkjk&line=8&uniqifier=1)); [creat a new one](https://colab.research.google.com/github/mobarakol/tutorial_notebooks/blob/main/tiny_imagenet.ipynb#scrollTo=O5IYHVb5Rukr&line=6&uniqifier=1)
+There are two way to creat datasets class: [inherent from library]((https://colab.research.google.com/github/linzhe001/tutorial_notebooks/blob/Notes/CIFAR_10N_CNN_withNotes.ipynb#scrollTo=z4uiWMiyCkjk&line=8&uniqifier=1)); [creat a new one](https://colab.research.google.com/github/mobarakol/tutorial_notebooks/blob/main/tiny_imagenet.ipynb#scrollTo=O5IYHVb5Rukr&line=6&uniqifier=1)

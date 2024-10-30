@@ -38,6 +38,21 @@ where：
 - $$P$$ = padding
 - $$K$$ = kernel size
 - $$S$$ = stride
+
+For transposed convolution, its different
+
+$$O = \frac{(I - 1) * S - 2P + K + OP}{1}$$
+
+
+where:
+- $$O$$ = output image size (height or width)
+- $$I$$ = input image size
+- $$S$$ = stride
+- $$P$$ = padding
+- $$K$$ = kernel size
+- $$OP$$ = output padding
+
+
 ### code structure
 like datasets function, model also can inherent from library or build by us.
 
@@ -61,7 +76,7 @@ class Net(nn.Module):
 ```
 **Useful code to defin the mode architecture**
 ```
-# each layer built like following example
+# each set built like following example
         self.conv1 = nn.Sequential(
             nn.Conv2d(3, 64, 3, padding=1),
             nn.BatchNorm2d(64),
@@ -70,6 +85,18 @@ class Net(nn.Module):
         )
 
 # these components could put in nn.Sequential
-- nn.Conv2d(in_channels=3, out_channels=64, kernel_size=3, stride=1, padding=1)
-- 
+## convolution layer
+- nn.Conv2d(in_channels, out_channels, kernel_size, stride, padding)
+- nn.ConvTranspose2d(in_channels, out_channels, kernel_size, stride, padding, output_padding)
+## pooling layer
+- nn.MaxPool2d(kernel_size, stride)
+- nn.AvgPool2d(kernel_size, stride)
+## batch normalization
+- nn.BatchNorm2d(num_features)
+## fully connected layer
+- nn.Linear(in_features, out_features)
+## activation function
+- nn.ReLU()
+- nn.Sigmoid()
+- nn.Tanh()
 ```

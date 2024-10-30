@@ -21,7 +21,7 @@ They are similar but only the new datasets create mapping between ID with classe
 
 ## Model architecture
 ### Basic knowledge
-![image](./cnn_architecture.jpeg)
+![image](./media/cnn_architecture.jpeg)
 
 shown in this figure:
 - each convolution kernel (filters) can generate one channel output. 

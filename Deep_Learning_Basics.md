@@ -21,7 +21,13 @@ They are similar but only the new datasets create mapping between ID with classe
 
 ## Model architecture
 
-each convolution kernel (filters) can generate one channel output
+![image](./cnn_architecture.jpeg)
+
+shown in this figure:
+- each convolution kernel (filters) can generate one channel output. 
+- the output size depends on the parameter of convolution kernel.
+
+
 **Basic input output image size calculation**
 
 $$O = \frac{(I + 2P - K)}{S} + 1$$

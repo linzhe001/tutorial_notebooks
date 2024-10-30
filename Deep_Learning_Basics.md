@@ -15,4 +15,4 @@ Dataloader is used to split datasets into batches, so before dataloader there is
 > 
 > output of datasets: augumented and paired images and labels in trainset; paired images and labels in testset
 
-There are two way to creat datasets class: [inherent from library](CIFAR_10N_CNN_withNotes.ipynb#CIFAR-10H_dataloader); [creat a new one](tiny_imagenet.ipynb#datasets_example)
+There are two way to creat datasets class: [inherent from library](CIFAR_10N_CNN_withNotes.ipynb #CIFAR-10H_dataloader); [creat a new one](tiny_imagenet.ipynb #datasets_example)

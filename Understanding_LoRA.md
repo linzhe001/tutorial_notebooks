@@ -8,7 +8,7 @@ Lora is a non-traditional fine-tuning way, which only used in multi-attention tr
 - Freeze pretrained-weights in multi-attention layers (blue box), and train it in our new datatsets to update the weights in the low-rank matrixs (yellow box).
 - For each one like the figure, the blue box can be Q, K or V in each mutli-attention layer.
 
-![image](./media/ LoRA.png)
+![image](./media/LoRA.png)
 ## Some technical issues
 1. How to determine the rank r?
 	It depends on the datasets size, our GPU memory. 
